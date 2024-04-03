@@ -1,0 +1,46 @@
+/* In @media query always: */
+/* rem = em = 16px */
+/* @media is agnostic to html font-size. */
+
+/*********************************/
+/** Common Breakpoints ***********/
+/*********************************/
+
+/* 1200px : Landscape tablet screen size starting width */
+
+/**********************************/
+/** BELOW 1344px (small monitor) **/
+/** 84em * 16px = 1344px         **/
+/**********************************/
+
+/* ==================================================== */
+/* max screen size target is 1350 px */
+/* So in 'em' units we calc:  1350px / 16px ~ 84em */
+@media (max-width: 84em) {
+  /* .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+}
+
+/* ==================================================== */
+/* max screen size target is 1200 px (Landscape mode) */
+/* So in 'em' units we calc:  1200px / 16px ~ 75em */
+@media (max-width: 75em) {
+  html {
+    /* We can rescale the whole webpage 
+       by just changing the root element.*/
+    /* This is the power of using 'rem' units
+       because when the root is changed, everything scales */
+
+    /* Converting browser root element 
+         font size to 9 (when default is 1rem = 16px) */
+    /*9 px / 16px =  56.25%*/
+    /* This means that 1rem = 9px*/
+
+    font-size: 56.25%;
+  }
+}

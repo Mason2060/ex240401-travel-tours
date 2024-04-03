@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- This next meta is crucial for responsivness -->
+    <!-- If it is not set as shown then the browser  -->
+    <!-- will auto zoom the viewport in/out to get the 
+         content to fill the viewport width. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -17,6 +22,7 @@
     <!-- Connecting project internal files -->
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- Connecting external files -->
 
@@ -29,7 +35,11 @@
 
     <title>Travel Tours &ndash; A fun way to travel</title>
   </head>
+
   <body>
+    <!-- ------------------------ -->
+    <!--   H E A D E R  -->
+    <!-- ------------------------ -->
     <header class="container page-header">
       <div class="btn-container">
         <button class="btn">Contact</button>
@@ -45,12 +55,59 @@
         <a href="#" class="nav-link">Menu</a>
       </div>
     </header>
+
+    <!-- ------------------------ -->
+    <!--   M A I N  -->
+    <!-- ------------------------ -->
     <main>
-      <section>
+      <!-- ------------------- -->
+      <!--   SECTION HERO      -->
+      <!-- ------------------- -->
+      <section class="container section-hero">
         <div class="box-b"></div>
       </section>
+
+      <!-- ------------------- -->
+      <!--   SECTION TRENDING  -->
+      <!-- ------------------- -->
+      <section class="container section-trending"></section>
+
+      <!-- ------------------- -->
+      <!--   SECTION  WHY US   -->
+      <!-- ------------------- -->
+      <section class="container section-whyus"></section>
+
+      <!-- ------------------- -->
+      <!--   SECTION STEPS     -->
+      <!-- ------------------- -->
+      <section class="container section-steps"></section>
+
+      <!-- ------------------------- -->
+      <!--   SECTION DESTINATION 1   -->
+      <!-- ------------------------- -->
+      <section class="container section-destination"></section>
+
+      <!-- ------------------------- -->
+      <!--   SECTION DESTINATION 2   -->
+      <!-- ------------------------- -->
+      <section class="container section-destination"></section>
+
+      <!-- ------------------------ -->
+      <!--  SECTION TESTINOMIALS    -->
+      <!-- ------------------------ -->
+      <section class="container section-testimonials"></section>
+
+      <!-- ------------------------ -->
+      <!--   SECTION SOCIAL MEDIA   -->
+      <!-- ------------------------ -->
+      <section class="container section-social-media"></section>
     </main>
-    <footer class="page-footer">
+
+    <!-- ------------------- -->
+    <!--   F O O O T E R     -->
+    <!-- ------------------- -->
+
+    <footer class="container page-footer">
       <div class="box-c"></div>
     </footer>
   </body>

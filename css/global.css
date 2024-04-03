@@ -17,11 +17,12 @@ html {
 }
 
 body {
+  background-color: #333;
+
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #555;
   line-height: 1;
-  background-color: #fff;
 }
 
 strong {
@@ -54,6 +55,6 @@ strong {
 .container {
   /* 114rem */
   max-width: 128rem;
-  padding: 0 3.2rem;
+  padding: 0 0rem;
   margin: 0 auto; /* Centers horizontaly */
 }
