@@ -3,16 +3,19 @@
 COLORS 
 ............................................................
 
-- Ttints and shades : https://imagecolorpicker.com/color-code/246cf4
+- Tints and shades : https://imagecolorpicker.com/color-code/246cf4
 - Primary:
      #246cf4
 - Tints:  
-    10% #3a7bf5 , 40% #7ca7f8
+    10% #3a7bf5 , 40% #7ca7f8       , 80% #d3e2fd
 - Shades:
-    10% #2061dc , 40% #164192 , 80% #071631
+    10% #2061dc , 40% HOVER #164192 , 80% #071631
 - Accents: 
-- Grays: #555 #333
-- Lightest gray allowed #6f6f6f on #fdf2e9
+- Grays: #555 #333 #fff #252525
+
+- Text general use: #555
+- Text anchor link : #777
+- Text anchor hover:  #252525
 
 --- SHADOWS
 For cards:   0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
@@ -22,8 +25,15 @@ For buttons: 0 1px 2px rgba(0, 0, 0, 0.2);
 --- 0x LAYOUT SPACING SYSTEM (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
+- Verticale spacing between sections : 96px
+- Hight of bars (nav-bar, section-title, ...) : 96px
+
+
 ............................................................
---- 01 TYPOGRAPHY SYSTEM
+............................................................
+F O N T S   TYPOGRAPHY SYSTEM
+............................................................
+
 - Font size (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
@@ -42,23 +52,18 @@ Bold: 700
 
 ............................................................
 letter-spacng:
-- For big font 52px (negative) -0.5px; 
-- For  0.75px; used in UPPERCASE 1.6rem
+- For large font-size 44px or 52px (negative) -0.5px; 
+- For UPPERCASE 16px use 0.75px;
 
-
-............................................................
-F O N T S 
-............................................................
-
-RULES: Font spacing rules:
+RULES: Font letter spacing rules:
 (1) In case of BIG font size (44 & larger) 
-use less spacing 
+use less letter spacing 
 example:
 in case of font-size: 52px; 
 use letter-spacng: -0.5px;
 
 ............................................................
---- 03 BORDER-RAIUS
+--- 03 BORDER-RADIUS
 - Default: 9px
 - Medium: 11px
 - For nav buton: 6px;

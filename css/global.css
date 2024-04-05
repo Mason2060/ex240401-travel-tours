@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #333;
+  background-color: #fff;
 
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -47,14 +47,112 @@ strong {
 }
 
 /* ************************** */
-/* REUASABLE COMPONENTS */
+/* ****     LAYOUTS      **** */
 /* ************************** */
-
-/* - Layout centered content container  .......... */
 
 .container {
   background-color: #fff;
   max-width: 128rem;
   padding: 0 0rem;
   margin: 0 auto; /* Centers horizontaly */
+}
+
+/* ************************** */
+/* ****     BUTTONS      **** */
+/* ************************** */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block; /*Enables control of x y padding*/
+  font-size: 1.6rem;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  border-radius: 0.9rem;
+  text-decoration: none; /*hides the <a> underline*/
+  padding: 1.2rem 2.4rem;
+  transition: all 0.5s;
+
+  /* For <button> elements */
+  border: none;
+  font-family: inherit;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #246cf4;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #164192;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: #333;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  /* background-color: #d3e2fd; */
+  box-shadow: inset 0 0 0 3px #fff;
+  border: 1px solid #333;
+  color: #252525;
+}
+
+/* ****************************** */
+/* ****   N A V    L I S T   **** */
+/* ****************************** */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-item:link,
+.nav-item:visited {
+  color: #777;
+  transition: all 0.3s;
+}
+.nav-item:hover,
+.nav-item:active {
+  color: #252525;
+}
+
+/* ************************** */
+/* ****     HELPERS      **** */
+/* ************************** */
+
+.helper-margin-right-sm {
+  margin-right: 2rem !important;
+}
+
+.helper-margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.helper-margin-vertical-md {
+  margin: 4.8rem 0 !important;
+}
+
+.helper-center-text {
+  text-align: center !important;
+}
+
+.text-strikethrough {
+  text-decoration: line-through !important;
+  color: #aaa !important;
 }
