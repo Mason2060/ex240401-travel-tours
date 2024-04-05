@@ -1,0 +1,13 @@
+/* ++++++++++++++++++++++++++ */
+/*        SECTION TITLE       */
+/* ++++++++++++++++++++++++++ */
+
+.section-title {
+  background-color: blueviolet;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  padding: 1.6rem;
+}

@@ -53,7 +53,7 @@ strong {
 /* - Layout centered content container  .......... */
 
 .container {
-  /* 114rem */
+  background-color: #fff;
   max-width: 128rem;
   padding: 0 0rem;
   margin: 0 auto; /* Centers horizontaly */
