@@ -248,22 +248,25 @@ h1.heading-primary {
 /* ************************** */
 
 .ionicon {
-  color: #c35f07;
+  color: #2061dc;
   width: 2.2rem;
   height: 2.2rem;
 }
 
 /* *** */
 /* The circled-icon draws the icon inside a circle */
-/* To use the circled-icon use: */
+/* To use the circled-icon : */
+/* (1) link to the ionicicon :*/
+/* <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> */
+/* (2) Add the html element for ion-icon : */
 /* <ion-icon class="circled-icon" name="infinite"></ion-icon> */
 /* *** */
 .circled-icon {
-  color: #e67e22;
-  width: 3.2rem;
-  height: 3.2rem;
-  padding: 1.6rem;
+  color: #fff;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.8rem;
   border-radius: 50%;
-  background-color: #fdf2e9;
-  margin-bottom: 3.2rem;
+  background-color: #164192;
+  margin-bottom: 1.6rem;
 }
