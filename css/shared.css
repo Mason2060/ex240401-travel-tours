@@ -3,11 +3,17 @@
 /* ++++++++++++++++++++++++++ */
 
 .section-title {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   font-size: 3rem;
-  color: #fff;
+
+  color: #252525;
   display: flex;
   justify-content: center;
   /* align-content: center; */
-  padding: 1.6rem;
+  padding: 6.4rem;
+}
+
+.section-title h1 {
+  font-size: 4.4rem;
+  font-weight: 500;
 }

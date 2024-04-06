@@ -1,0 +1,91 @@
+/* ************************** */
+/* ****     CARDS BASE   **** */
+/* ************************** */
+
+.card {
+  background-color: #fff;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-0.7rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+.card-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+/* ***************************************************** */
+/* ****  Card with image , tags & icon bullet list  **** */
+/* ***************************************************** */
+
+.card-img {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.detail-text {
+  font-size: 1.8rem;
+}
+
+.detail-icon {
+  color: #c35f07;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.ionicon {
+  color: #c35f07;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+/* ************************************************ */
+/* ****  Card with only a list of icon + text  **** */
+/* ************************************************ */
+
+.card-list {
+  background-color: #fff;
+}
+
+.heading-list-card {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
