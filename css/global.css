@@ -243,15 +243,27 @@ h1.heading-primary {
   background-color: #cd9808;
 }
 
+/* ************************** */
+/* ****   ICON  STYLING  **** */
+/* ************************** */
+
 .ionicon {
   color: #c35f07;
   width: 2.2rem;
   height: 2.2rem;
 }
 
-/* ------------------------------------------------*/
-/* ----  Card with only an icon bullet list   ---- */
-
-.meal-list {
-  background-color: #fff;
+/* *** */
+/* The circled-icon draws the icon inside a circle */
+/* To use the circled-icon use: */
+/* <ion-icon class="circled-icon" name="infinite"></ion-icon> */
+/* *** */
+.circled-icon {
+  color: #e67e22;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
 }
