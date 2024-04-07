@@ -6,7 +6,7 @@
   background-color: #fff;
   border-radius: 9px;
   overflow: hidden;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .card-content {
-  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  padding: 3.2rem;
 }
 
 /* ***************************************************** */
@@ -44,10 +44,12 @@
   display: flex;
   align-items: center;
   gap: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .detail-text {
   font-size: 1.8rem;
+  line-height: 2.4rem; /* Line height needs to be icon height */
 }
 
 .detail-icon {
@@ -62,9 +64,17 @@
   height: 2.2rem;
 }
 
-/* ************************************************ */
-/* ****  Card with only a list of icon + text  **** */
-/* ************************************************ */
+/* ***************************************************************** */
+/* *** Card with a list of items and a bottom full-width button **** */
+/* ***************************************************************** */
+
+/*   Example of how an html list item is used */
+/*  with a circled icon and text :*/
+/*  <li class="detail-item">
+      <ion-icon class="circled-icon" name="checkmark"></ion-icon>
+      <span class="detail-text">Approval within 24-48 hours</span>
+    </li>
+ */
 
 .card-list {
   background-color: #fff;
@@ -73,7 +83,7 @@
 .heading-list-card {
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .list {
@@ -88,4 +98,35 @@
   align-items: center;
   gap: 1.6rem;
   line-height: 1.2;
+}
+
+.card-button a {
+  color: inherit;
+}
+
+.card-button:link,
+.card-button:active,
+.card-button:visited {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: #fff;
+  background-color: #246cf4;
+}
+
+.card-button:hover {
+  /* color: #fff; */
+  background-color: #164192;
+}
+
+/* ************************* */
+/* *** Card Decorations **** */
+/* ************************* */
+
+.card-hr-thin {
+  border: #eee 1px solid;
+  margin-bottom: 3.2rem;
 }

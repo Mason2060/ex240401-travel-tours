@@ -60,8 +60,23 @@ a:active {
 /* ****     LAYOUTS      **** */
 /* ************************** */
 
+.row-full {
+  background-color: #fff;
+  padding-bottom: 9.6rem;
+}
+
+.row-full--alternate {
+  background-color: #fafafa;
+}
+
+.row-full--padtop {
+  padding-top: 9.6rem;
+}
+
 .container {
   background-color: #fff;
+  /* background-color: #ac2828; */
+  /* border: #2ccf2c 5px solid; */
   max-width: 128rem;
   padding: 0 0rem;
   margin: 0 auto; /* Centers horizontaly */
@@ -247,6 +262,11 @@ h1.heading-primary {
 /* ****   ICON  STYLING  **** */
 /* ************************** */
 
+.icon-flag {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
 .ionicon {
   color: #2061dc;
   width: 2.2rem;
@@ -262,11 +282,11 @@ h1.heading-primary {
 /* <ion-icon class="circled-icon" name="infinite"></ion-icon> */
 /* *** */
 .circled-icon {
+  flex: 0 0 1.6rem; /* 0 grow, 0 shrink, 1.6rem height*/
   color: #fff;
   width: 1.6rem;
   height: 1.6rem;
   padding: 0.8rem;
   border-radius: 50%;
   background-color: #164192;
-  margin-bottom: 1.6rem;
 }

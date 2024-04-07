@@ -53,19 +53,13 @@
 /* *********************** */
 .section-tours {
   background-color: #fff;
+  /* border: #622626 2px solid; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2;
-  row-gap: 2rem;
-  column-gap: 2rem;
+  row-gap: 2.4rem;
+  column-gap: 4.8rem;
 }
-/* 
-.tour-card {
-  background-color: #cddbeb;
-  border: #622626 1px solid;
-  font-size: 1.8rem;
-  height: 8rem;
-} */
 
 .card-content > p {
   color: #333;
@@ -81,8 +75,21 @@
 }
 
 .card-content p:nth-child(3) {
+  /* This is the main title of the card */
+  /*   The corosponding html can include an icon with the  */
+  /* the text title as in example:  */
+  /*  <p>
+        <img
+          class="icon-flag"
+          src="https://example.org/images/core/emoji/som-image.svg" />
+           My Title
+      </p> */
+  display: flex;
+  gap: 1.2rem;
   font-size: 4.4rem;
+  align-items: center;
 }
+
 .card-content p:nth-child(4) {
   font-size: 1.6rem;
   margin-bottom: 3.2rem;
@@ -109,7 +116,7 @@
 /*       SECTION STEPS        */
 /* ************************** */
 .section-steps {
-  background-color: #9a3a3a;
+  background-color: transparent;
   display: flex;
 }
 
@@ -138,16 +145,16 @@
 /*    SECTION TESTINOMIALS    */
 /* ************************** */
 .section-testimonials {
-  background-color: #fff;
+  background-color: transparent;
   height: 7rem;
 }
 
 /* ************************** */
 /*    SECTION SOCIAL  MEDIA   */
 /* ************************** */
-.section-social-media {
+.section-social {
   display: flex;
-  background-color: #cb74d6;
+  background-color: transparent;
   align-items: center;
   justify-content: center;
   font-size: 2.4rem;
@@ -155,11 +162,20 @@
   height: 7rem;
 }
 
+.section-social-row {
+  background-color: #860ca7;
+  padding-bottom: 0rem;
+}
+
 /* ************************** */
 /*       F O O T E R          */
 /* ************************** */
 .page-footer {
-  background-color: #242424;
+  background-color: transparent;
   color: #fff;
   height: 7rem;
+}
+
+.page-footer-row {
+  background-color: #242424;
 }
