@@ -122,6 +122,65 @@
   background-color: #164192;
 }
 
+/* **************************************************** */
+/* *** Info card with icon title and small article **** */
+/* **************************************************** */
+
+/*   Example of the html that uses this styling */
+/* 
+ <div class="whyus-card">
+    <img
+      class="card-article-icon"
+      src="https://visanet.co.il/wp-content/uploads/screen-check.svg"
+      alt="" />
+    <h3 class="card-article-title">
+      Simple online process, without leaving home
+    </h3>
+    <article class="card-article-text">
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. At tempora,
+      atque facere ex corporis, eveniet velit maiores obcaecati perferendis
+      dolorum assumenda iusto accusantiu
+      </p>
+    </article>
+    div>
+ */
+
+.whyus-card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  background-color: #fefefe;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  border: #ededed 1px solid;
+  border-radius: 9px;
+  overflow: hidden;
+  font-size: 1.8rem;
+  padding: 3.2rem;
+}
+
+.card-article-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  margin-bottom: 3rem;
+  justify-self: flex-start;
+}
+
+.card-article-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 0.8rem;
+  height: 6.4rem;
+}
+
+.card-article-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  justify-self: flex-end;
+}
+
 /* ************************* */
 /* *** Card Decorations **** */
 /* ************************* */
