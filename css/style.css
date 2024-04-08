@@ -100,18 +100,65 @@
 /* ************************** */
 .section-whyus {
   background-color: #fff;
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 2rem;
+}
+
+.whyus-text {
+  /* border: #198d32 2px solid; */
+  grid-column: 1 / -1;
+  padding: 0rem 16rem;
+  margin: 4.8rem 0rem 4.8rem 0rem;
+}
+
+article.whyus-text p {
+  color: #666;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+article.whyus-text p:nth-child(1) {
+  /* color: green; */
+  margin-bottom: 1.6rem;
 }
 
 .whyus-card {
-  flex-grow: 1;
-  background-color: #cddbeb;
-  border: #622626 1px solid;
-
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  background-color: #fefefe;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  border: #ededed 1px solid;
+  border-radius: 9px;
+  overflow: hidden;
   font-size: 1.8rem;
-  height: 7rem;
+  padding: 3.2rem;
 }
+
+.card-article-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  margin-bottom: 3rem;
+  justify-self: flex-start;
+}
+
+.card-article-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 0.8rem;
+  height: 6.4rem;
+}
+
+.card-article-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  justify-self: flex-end;
+}
+
 /* ************************** */
 /*       SECTION STEPS        */
 /* ************************** */

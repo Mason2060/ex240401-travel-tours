@@ -73,6 +73,10 @@ a:active {
   padding-top: 9.6rem;
 }
 
+.row-full--no-padbottom {
+  padding-bottom: 0rem;
+}
+
 .container {
   background-color: #fff;
   /* background-color: #ac2828; */
