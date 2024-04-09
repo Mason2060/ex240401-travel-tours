@@ -165,16 +165,81 @@ article.whyus-text p:nth-child(1) {
 .section-steps {
   background-color: transparent;
   display: flex;
+  gap: 6.4rem;
 }
 
 .section-steps > img {
-  width: 40%;
-  border: 4px solid yellow;
+  width: 61rem;
+  height: 61rem;
+  flex: 0 0 61rem;
+
+  box-shadow: 0 2.3rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  overflow: hidden;
 }
 
-.steps-container > div {
-  background-color: aquamarine;
+.steps-container {
+  /* background-color: rgb(219, 237, 231); */
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+
+  justify-content: space-between;
+  gap: 6.4rem;
+  border-left: 1px dotted #ccc;
+}
+
+.step-item {
+  /* border: 1px solid rgb(222, 19, 77); */
+  position: relative;
+  padding: 0 4.8rem 0 6.4rem;
+}
+
+.step-title {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+.step-title img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.step-item > p {
+  /* color: rgb(251, 11, 67); */
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+
+.step-item .step-number {
+  /* Positiong the whole step-number relative to the step-item */
+  position: absolute; /* step-item is position relative */
+  top: 0rem;
+  left: -3.2rem;
+  /* right: -3.2rem; */
+
+  /* Drawing the circle */
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+
+  /* Justification inside the circle */
+  flex: 0 0 1.6rem; /* 0 grow, 0 shrink, 1.6rem height*/
+  align-content: center;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+  padding: 0.8rem;
+
+  /* Coloring the step-number */
+  background-color: #fff;
+  color: #246cf4;
+  border: #246cf4 2px solid;
 }
 
 /* ************************** */

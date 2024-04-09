@@ -5,7 +5,7 @@ COLORS
 
 - Tints and shades : https://imagecolorpicker.com/color-code/246cf4
 - Primary:
-     #246cf4
+     #246cf4 
 - Tints:  
     10% #3a7bf5 , 40% #7ca7f8       , 80% #d3e2fd
 - Shades:
@@ -17,9 +17,12 @@ COLORS
 - Text anchor link : #777
 - Text anchor hover:  #252525
 
+............................................................
+BOX  SHADOW:  box-shadow: offset-x offset-y blur spread color
+............................................................
 --- SHADOWS
-For cards:   0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
-For buttons: 0 1px 2px rgba(0, 0, 0, 0.2);
+For cards:   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+For buttons: box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
 ............................................................
 LAYOUT SPACING SYSTEM (px)
