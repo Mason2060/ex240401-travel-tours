@@ -25,6 +25,17 @@ body {
   line-height: 1;
 }
 
+figure h3 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+figcaption {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
 strong {
   font-weight: 500;
   color: #555;
@@ -293,4 +304,37 @@ h1.heading-primary {
   padding: 0.8rem;
   border-radius: 50%;
   background-color: #164192;
+}
+
+/* ==============================================*/
+/* ===  A CIRCLE WITH A NUMBER IN THE CENTER  === */
+/* ==============================================*/
+/* The HTML to activate this object is : */
+/* <p class="step-number">1</p> */
+/* But the elememnt can be anything doesnt have to be <p> */
+
+.circle-number {
+  /* Positiong the whole step-number relative to the step-item */
+  position: absolute; /* step-item is position relative */
+  top: 0rem;
+  left: -3.2rem;
+  /* right: -3.2rem; */
+
+  /* Drawing the circle */
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+
+  /* Justification inside the circle */
+  flex: 0 0 1.6rem; /* 0 grow, 0 shrink, 1.6rem height*/
+  align-content: center;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+  padding: 0.8rem;
+
+  /* Coloring the step-number */
+  background-color: #fff;
+  color: #246cf4;
+  border: #246cf4 2px solid;
 }
