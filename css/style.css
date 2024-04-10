@@ -245,19 +245,24 @@ article.whyus-text p:nth-child(1) {
 /* ************************** */
 /*   SECTION DESTINATION      */
 /* ************************** */
+
 .section-destination {
-  background-color: #e6f5d2;
+  /* background-color: #e6f5d2; */
 
   display: flex;
   gap: 3.2rem;
   justify-content: space-between;
 }
 
+/* ................... */
+/* .. THE LEFT SIDE .. */
+/* ................... */
+
 .dest-picture-card {
   /* background-color: #fbdbfa; */
   /* width: 70%; */
-  flex-grow: 0;
-  flex-basis: 95rem;
+  /* flex-grow: 2; */
+  flex-basis: 80rem;
 }
 
 .dest-figure {
@@ -289,9 +294,69 @@ article.whyus-text p:nth-child(1) {
   margin-bottom: 4.8rem;
 }
 
+/* .................... */
+/* .. THE RIGHT SIDE .. */
+/* .................... */
+
 .dest-text {
-  /* width: 40%; */
-  background-color: #ceefff;
+  /* flex-grow: 1; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  /* justify-content: space-between; */
+  /* background-color: #ceefff; */
+}
+
+.dest-text h4 {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+.dest-text > p {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #555;
+}
+
+.dest-text hr {
+  margin-right: 75%;
+  border-color: rgb(36, 108, 244, 0.3);
+}
+
+.dest-text button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1.2rem 2.4rem;
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #666;
+  margin: 0 15%;
+}
+
+/* ------------- */
+
+.dest-text-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.dest-text-title h3 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+}
+
+.dest-text-title img {
+  /* flex: 0 0 7.5rem; */
+  /* width: 7.5rem; */
+  height: 4.5rem;
+  margin-right: 1.6rem;
 }
 
 /* ************************** */
