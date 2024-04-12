@@ -59,12 +59,13 @@ a:visited {
   color: #3a7bf5; /*#246cf4*/
   padding-bottom: px;
   /* border-bottom: currentColor 1px solid; */
-  transition: all 0.3s;
+  transition: all 2s;
 }
 
 a:hover,
 a:active {
   color: #246cf4;
+  border-bottom: currentColor 1px solid;
 }
 
 /* ************************** */
