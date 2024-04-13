@@ -95,6 +95,16 @@
   margin-bottom: 3.2rem;
 }
 
+.tag--tours-card2 {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+}
+
+.tag-tours-relative {
+  position: relative;
+}
+
 /* ************************** */
 /*        SECTION WHY US      */
 /* ************************** */
@@ -135,6 +145,16 @@ article.whyus-text p:nth-child(1) {
   overflow: hidden;
   font-size: 1.8rem;
   padding: 3.2rem;
+}
+
+.tag--whyus-card2 {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+}
+
+.tag-whyus-relative {
+  position: relative;
 }
 
 .card-article-icon {
