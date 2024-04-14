@@ -6,24 +6,303 @@
 /** Common Breakpoints ***********/
 /*********************************/
 
-/* 1200px : Landscape tablet screen size starting width */
+/* 
+Process of implementing reactivness:
 
-/**********************************/
-/** BELOW 1344px (small monitor) **/
-/** 84em * 16px = 1344px         **/
-/**********************************/
+(1) The largest screen sizes are 1200 and more.
+
+(2) Plan the webpage for max screen size of 1350px
+    and verify it can deisplay good layout 
+    in range 1200-1350.
+
+(3) Then lower range from 1200 downwards until
+    layout breaks. That break is the new width 
+    to focus on. Fix it without media query.
+
+(4) Then repeat : Go down from that previous break
+    width until again breaks. Fix and repeat.
+ */
+
+/* 
+ Calculating the 'em' units for @media query :
+ (1) We want the @media query to be in 'em' units
+     not 'rem' and not 'px' or anything else.
+
+ (2) The reason is that when the user adjusts
+     their browser default size then 'em' units
+     will be relative to that as an indication of 
+     screen width. 
+     In other words if the user changed font 
+     size to large then the amount of 'm' charcters
+     that fit in width is 400.
+     But if they changed font size to small then 
+     the screen width is 800 'm' chars.
+     So we need our reactivness to be relative 
+     to the screen width in units of 'm' charecters.
+
+  (3) To convert the width from pixels to 'em' :
+      <pixels> / 16 = <em>
+      Example:  1600px / 16 = 100em
+      So the media query will be :
+         @media (max-width: 100em) { }
+*/
+
+/*
+For general knowledge, common screen size ranges
+1201px and more —  Extra large screens, TV
+1025px — 1200px: Desktops, large screens
+769px — 1024px: Small screens, laptops
+481px — 768px: iPads, Tablets
+320px — 480px: Mobile devices
+ */
 
 /* ==================================================== */
-/* max screen size target is 1350 px */
-/* So in 'em' units we calc:  1350px / 16px ~ 84em */
-@media (max-width: 84em) {
-  /* .heading-primary {
-    font-size: 4.4rem;
+/* max screen size target is 1264 px */
+/* So in 'em' units we calc:  1264px / 16px = 79em */
+@media (max-width: 79em) {
+  .hero-image {
+    /* border: 1px solid red; */
+    /* background-color: #fff; */
+    /* max-width: 60%; */
+    width: 63rem;
+    height: auto;
+    padding: 0 0rem;
   }
 
-  .gallery {
+  /* .hero-text-container {
+    padding: 1rem 2rem 0 2rem;
+  } */
+
+  /* .gallery {
     grid-template-columns: repeat(2, 1fr);
   } */
+}
+
+/* ==================================================== */
+/* max screen size target is 1072 px */
+/* So in 'em' units we calc:  1072px / 16px = 67em */
+@media (max-width: 67em) {
+  .row-full {
+    /* background-color: #fff; */
+    padding-bottom: 4.8rem;
+  }
+
+  .row-full--padtop {
+    padding-top: 4.8rem;
+  }
+
+  .hero-image {
+    /* border: 2px solid rgb(77, 194, 13); */
+
+    background-color: #fff;
+    max-width: 40%;
+    width: 40%;
+    height: auto;
+    margin-top: 2.4rem;
+    padding: 0 0rem;
+    align-self: flex-start;
+  }
+
+  .hero-text-container {
+    /* border: 2px solid rgb(77, 194, 13); */
+    max-width: 70%;
+    flex-grow: 0;
+    margin: 0 0rem;
+  }
+
+  .section-hero > article > p {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #777;
+    margin-bottom: 1.6rem;
+  }
+
+  .section-tours {
+    grid-template-columns: 40rem 40rem;
+    grid-template-rows: 1;
+    row-gap: 4.8rem;
+    column-gap: 1.2rem;
+    justify-content: space-around;
+    margin: 0 5rem;
+  }
+
+  .section-whyus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+    margin: 0 3.2rem;
+  }
+
+  .whyus-text {
+    padding: 0rem 12rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .section-steps > img {
+    width: 45rem;
+    height: 45rem;
+    flex: 0 0 51rem;
+  }
+
+  .dest-picture-card {
+    /* background-color: #fbdbfa; */
+    /* width: 70%; */
+    /* flex-grow: 2; */
+    flex-basis: 40rem;
+  }
+
+  .dest-figure {
+    padding: 3.2rem;
+  }
+
+  .dest-figure img {
+    max-width: 40rem;
+    overflow: hidden;
+  }
+
+  .dest-text .btn--outline {
+    /* border: 2px solid rgb(77, 194, 13); */
+    padding: 0.6rem 1.2rem;
+  }
+
+  .section-social {
+    font-size: 2rem;
+  }
+
+  .footer-icons img {
+    max-height: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .footer-address {
+    /* border: red solid 1px; */
+    width: 50%;
+  }
+}
+
+/* ==================================================== */
+/* max screen size target is 848 px */
+/* So in 'em' units we calc:  848px / 16px = 53em */
+@media (max-width: 53em) {
+  .section-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    /* border: 3px solid rgb(213, 29, 216); */
+    margin: 0 auto;
+    /* min-height: 40rem; */
+    min-width: 50rem;
+    /* height: 90rem; */
+    height: auto;
+  }
+
+  .hero-text-container {
+    /* border: 2px solid rgb(77, 194, 13); */
+    max-width: 80%;
+    flex-grow: 0;
+    /* padding: 1rem 2rem 0 2rem; */
+    margin: 0 1.2rem;
+  }
+
+  .nav-list {
+    /* list-style: none;
+    display: flex;
+    align-items: center; */
+    gap: 1.2rem;
+  }
+
+  .nav-item {
+    font-size: 1.6rem;
+
+    /* display: inline-block;
+    font-weight: 600;
+    text-decoration: none; */
+  }
+
+  .section-tours {
+    grid-template-columns: 40rem;
+    grid-template-rows: 1;
+    row-gap: 4.8rem;
+    justify-content: space-around;
+    /* margin: 0 5rem; */
+  }
+
+  /* ------------- */
+
+  .section-title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    align-self: center;
+  }
+
+  .section-steps {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4.8rem; */
+  }
+
+  .section-steps img:last-child {
+    /* border: 3px solid rgb(213, 29, 216); */
+    order: -1;
+    width: auto;
+    height: 25rem;
+    margin: 0 12.8rem;
+    /* flex: 0 0 35rem; */
+  }
+
+  /* ------------- */
+
+  .whyus-text {
+    padding: 0rem 3.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .section-whyus {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    /* column-gap: 4.8rem; */
+    row-gap: 4.8rem;
+    margin: 0 6.4rem;
+  }
+
+  .section-whyus .whyus-card {
+    margin: 0 4.8rem;
+  }
+
+  .dest-picture-card {
+    /* background-color: #fbdbfa; */
+    /* width: 70%; */
+    /* flex-grow: 2; */
+    flex-basis: 20rem;
+  }
+
+  .dest-figure img {
+    max-width: 30rem;
+    overflow: hidden;
+  }
+
+  .dest-text {
+    width: 70%;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 1.8rem;
+  }
+
+  .dest-text .btn--outline {
+    /* border: 3px solid rgb(213, 29, 216); */
+    /* margin: 3.2rem 0 3.2rem 0; */
+    padding: 0.6rem 1.2rem;
+  }
+
+  .dest-figure {
+    padding: 2.4rem;
+  }
 }
 
 /* ==================================================== */

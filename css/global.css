@@ -9,10 +9,34 @@
 /* ****************************** */
 
 html {
+  /* By default browsers have font-size: 16px */
+  /* It is not easy to write code using 16 as 
+     number to convert all px units in code to rem.
+     
+     So we convert font-size to 10px.
+     But we cant just set font-size: 10px; because
+     browser users may change preferences to another
+     font-size and it will overide our 10px.
+     That will cause all are 'rem' to reference 
+     the user's preferenced font-size, which can
+     break the design.
+
+     So we use % that way agnostic to the browser 
+     font-size we will always use a % of that value.
+     The % we choose is the one that gives us 10px
+     in the default case, in other words : 
+       10px / 16px = 62.5%.
+
+     The downside is that people with accesability may
+     have a smaller font-size (10px instead of 16px) 
+     but that can be taken care if we dont use 
+     font-size: 1rem;
+     
+  */
   /* Converting browser root element 
-      font size to 10 (when default is 16px) */
-  /*10 px / 16px =  62.5%*/
-  /* This means that 1rem = 10px*/
+      font size to 10px (when default is 16px) */
+  /* 10 px / 16px =  62.5% */
+  /* This means that 1rem = 10px */
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -79,6 +103,7 @@ a:active {
 }
 
 .row-full--alternate {
+  /* background-color: #b08b8b; */
   background-color: #fafafa;
 }
 
@@ -91,11 +116,10 @@ a:active {
 }
 
 .container {
-  background-color: #fff;
-  /* background-color: #ac2828; */
-  /* border: #2ccf2c 5px solid; */
+  /* border: 2px solid rgb(77, 194, 13); */
+
   max-width: 128rem;
-  padding: 0 0rem;
+  padding: 0rem 1.2rem;
   margin: 0 auto; /* Centers horizontaly */
 }
 

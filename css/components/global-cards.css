@@ -6,7 +6,7 @@
   background-color: #fff;
   border-radius: 9px;
   overflow: hidden;
-  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
 }
 
