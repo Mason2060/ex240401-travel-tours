@@ -1,3 +1,14 @@
+:root {
+  --clr-blue-400: #246cf4;
+  --clr-blue-600: #164192;
+}
+
+@property --logo-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #c0ffee;
+}
+
 /* ************************** */
 /* HEADER NAV BAR */
 /* ************************** */
@@ -275,8 +286,9 @@ article.whyus-text p:nth-child(1) {
 
   /* Coloring the step-number */
   background-color: #fff;
-  color: #246cf4;
-  border: #246cf4 2px solid;
+  /* color: #246cf4; */
+  color: var(--clr-blue-400);
+  border: var(--clr-blue-400) 2px solid;
 }
 
 /* ************************** */
@@ -406,13 +418,10 @@ article.whyus-text p:nth-child(1) {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-
-  /* gap: 4.8rem; */
-  /* height: 7rem; */
 }
 
 .testimonial-item {
-  background-color: #fff;
+  /* background-color: #fff; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -422,6 +431,7 @@ article.whyus-text p:nth-child(1) {
 
 .testimonial-item p:nth-child(1),
 .testimonial-item p:nth-child(4) {
+  /* This is the first of two parenthesis */
   /* color: red; */
   font-size: 3rem;
   font-weight: 600;
@@ -433,12 +443,14 @@ article.whyus-text p:nth-child(1) {
 }
 
 .section-testimonials p:nth-child(2) {
+  /* These are the stars row */
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
 
 .section-testimonials p:nth-child(3) {
+  /* This is the main content of the testimonial */
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 3.2rem;
@@ -448,6 +460,7 @@ article.whyus-text p:nth-child(1) {
 
 .testimonial-item p:nth-child(5),
 .testimonial-item p:nth-child(6) {
+  /* These are the name and date lowest text */
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1.6rem;
@@ -462,6 +475,7 @@ article.whyus-text p:nth-child(1) {
   /* border: 1px solid red; */
   margin: 0 12.8rem;
 }
+
 .testimonials-list {
   display: flex;
   justify-content: space-between;
@@ -478,7 +492,7 @@ article.whyus-text p:nth-child(1) {
 }
 
 .testimonials-list li:last-child img {
-  border: 2px solid #246cf4;
+  border: 2px solid var(--clr-blue-400);
   box-shadow: 0 0 1.2rem rgb(36, 108, 244, 0.5);
   width: 8rem;
 }
@@ -575,7 +589,7 @@ article.whyus-text p:nth-child(1) {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #246cf4;
+  border-top: 1px solid var(--clr-blue-400);
   margin-right: 60%;
   margin-top: 4.8rem;
   margin-bottom: 4.8rem;
@@ -637,7 +651,7 @@ article.whyus-text p:nth-child(1) {
   /* padding: 3rem 0; */
 
   /* Coloring the step-number */
-  background-color: #246cf4;
+  background-color: var(--clr-blue-400);
   color: #fff;
   /* border: #fff 2px solid; */
 }

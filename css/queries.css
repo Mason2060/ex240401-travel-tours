@@ -6,38 +6,38 @@
 /** Common Breakpoints ***********/
 /*********************************/
 
-/* 
+/*
 Process of implementing reactivness:
 
 (1) The largest screen sizes are 1200 and more.
 
 (2) Plan the webpage for max screen size of 1350px
-    and verify it can deisplay good layout 
+    and verify it can deisplay good layout
     in range 1200-1350.
 
 (3) Then lower range from 1200 downwards until
-    layout breaks. That break is the new width 
+    layout breaks. That break is the new width
     to focus on. Fix it without media query.
 
 (4) Then repeat : Go down from that previous break
     width until again breaks. Fix and repeat.
  */
 
-/* 
+/*
  Calculating the 'em' units for @media query :
  (1) We want the @media query to be in 'em' units
      not 'rem' and not 'px' or anything else.
 
  (2) The reason is that when the user adjusts
      their browser default size then 'em' units
-     will be relative to that as an indication of 
-     screen width. 
-     In other words if the user changed font 
+     will be relative to that as an indication of
+     screen width.
+     In other words if the user changed font
      size to large then the amount of 'm' charcters
      that fit in width is 400.
-     But if they changed font size to small then 
+     But if they changed font size to small then
      the screen width is 800 'm' chars.
-     So we need our reactivness to be relative 
+     So we need our reactivness to be relative
      to the screen width in units of 'm' charecters.
 
   (3) To convert the width from pixels to 'em' :
@@ -150,7 +150,7 @@ For general knowledge, common screen size ranges
     /* background-color: #fbdbfa; */
     /* width: 70%; */
     /* flex-grow: 2; */
-    flex-basis: 40rem;
+    /* flex-basis: 40rem; */
   }
 
   .dest-figure {
@@ -186,6 +186,11 @@ For general knowledge, common screen size ranges
 /* max screen size target is 848 px */
 /* So in 'em' units we calc:  848px / 16px = 53em */
 @media (max-width: 53em) {
+  .icon-flag {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
   .section-hero {
     display: flex;
     flex-direction: column;
@@ -224,6 +229,8 @@ For general knowledge, common screen size ranges
     text-decoration: none; */
   }
 
+  /* ------------- */
+
   .section-tours {
     grid-template-columns: 40rem;
     grid-template-rows: 1;
@@ -238,21 +245,6 @@ For general knowledge, common screen size ranges
     font-size: 3rem;
     font-weight: 500;
     align-self: center;
-  }
-
-  .section-steps {
-    display: flex;
-    flex-direction: column;
-    /* gap: 4.8rem; */
-  }
-
-  .section-steps img:last-child {
-    /* border: 3px solid rgb(213, 29, 216); */
-    order: -1;
-    width: auto;
-    height: 25rem;
-    margin: 0 12.8rem;
-    /* flex: 0 0 35rem; */
   }
 
   /* ------------- */
@@ -275,11 +267,42 @@ For general knowledge, common screen size ranges
     margin: 0 4.8rem;
   }
 
+  /* ------------- */
+
+  .section-steps {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4.8rem; */
+  }
+
+  .section-steps img:last-child {
+    /* border: 3px solid rgb(213, 29, 216); */
+    order: -1;
+    width: auto;
+    height: 25rem;
+    margin: 0 12.8rem;
+    /* flex: 0 0 35rem; */
+  }
+
+  /* ------------- */
+
+  .section-destination {
+    /* background-color: #e6f5d2; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 6.4rem;
+    /* justify-content: space-between; */
+  }
+
   .dest-picture-card {
-    /* background-color: #fbdbfa; */
-    /* width: 70%; */
-    /* flex-grow: 2; */
-    flex-basis: 20rem;
+    width: 60%;
+    flex-basis: 100%;
+    align-self: center;
+  }
+
+  .dest-figure {
+    width: 100%;
   }
 
   .dest-figure img {
@@ -288,9 +311,8 @@ For general knowledge, common screen size ranges
   }
 
   .dest-text {
+    align-self: center;
     width: 70%;
-    /* display: flex;
-    flex-direction: column; */
     gap: 1.8rem;
   }
 
@@ -303,23 +325,59 @@ For general knowledge, common screen size ranges
   .dest-figure {
     padding: 2.4rem;
   }
+
+  /* ------------- */
+
+  .testimonials-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0.8rem;
+    list-style: none;
+  }
+
+  .testimonial-item {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    margin: 0 3.2rem;
+    padding: 2.4rem;
+  }
+
+  .testimonial-images {
+    /* border: 1px solid red; */
+    margin: 0 3.2rem;
+  }
+
+  .testimonials-list li img {
+    width: 3.6rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+  }
+
+  .testimonials-list li:last-child img {
+    border: 2px solid #246cf4;
+    box-shadow: 0 0 1.2rem rgb(36, 108, 244, 0.5);
+    width: 4rem;
+  }
 }
 
 /* ==================================================== */
-/* max screen size target is 1200 px (Landscape mode) */
-/* So in 'em' units we calc:  1200px / 16px ~ 75em */
-@media (max-width: 75em) {
+/* 'em' units we calc:  560px / 16px = 35em */
+@media (max-width: 35em) {
   html {
-    /* We can rescale the whole webpage 
+    /* We can rescale the whole webpage
        by just changing the root element.*/
     /* This is the power of using 'rem' units
        because when the root is changed, everything scales */
 
-    /* Converting browser root element 
+    /* Converting browser root element
          font size to 9 (when default is 1rem = 16px) */
     /*9 px / 16px =  56.25%*/
     /* This means that 1rem = 9px*/
 
-    font-size: 56.25%;
+    font-size: 40%;
+    /* font-size: 56.25%; */
   }
 }
