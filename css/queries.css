@@ -146,13 +146,6 @@ For general knowledge, common screen size ranges
     flex: 0 0 51rem;
   }
 
-  .dest-picture-card {
-    /* background-color: #fbdbfa; */
-    /* width: 70%; */
-    /* flex-grow: 2; */
-    /* flex-basis: 40rem; */
-  }
-
   .dest-figure {
     padding: 3.2rem;
   }
